@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <title>Etch A Sketchitle</title>
   </head>
   <body>
@@ -11,13 +12,17 @@
         <h1 class="title">Etch A Sketch</h1>
     <div class="edit-section">
         
-        <div>Current Boxes : <span class="boxes-num">16</span></div>
+        <div>Current Boxes Per Side : <span class="boxes-num">16</span></div>
         <div class="edit-form">
-      <input class="edit-input" type="number" max="64" min="16" />
+      <input class="edit-input" type="number" max="64" min="16"/>
       <button class="edit-button">Confirm</button>
       </div>
     </div>
     <div class="container"></div>
+    <div class="colors-section">
+      <label for="color">Choose a color:</label>
+      <input type="color" id="color" value="#000000">
+    </div>
     </div>
   </body>
 </html>
