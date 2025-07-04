@@ -6,10 +6,11 @@
 body {
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items:flex-start;
+  justify-content:flex-start;
+  align-items: center;
   font-family: sans-serif;
-  padding:10px;
+  padding: 10px;
+  flex-direction: column;
 }
 .title {
   text-align: center;
@@ -38,18 +39,20 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width:640px;
-  margin:10px;
-  padding:10px;
+  width: 640px;
+  margin: 10px;
+  padding: 10px;
 }
-.edit-section , .colors-section {
+.edit-section,
+.colors-section {
   width: 100%;
   padding: 20px 25px;
   background-color: rgb(244, 242, 242);
   border-radius: 10px;
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.151);
 }
-.edit-form , .colors-section {
+.edit-form,
+.colors-section {
   display: flex;
   gap: 10px;
 }
@@ -72,5 +75,12 @@ body {
   aspect-ratio: 1/1;
   border: 5px solid rgb(67, 67, 67);
   border-radius: 10px;
-  
+}
+footer {
+  padding:30px;
+  text-align: center;
+  margin:15px;
+  background-color:black;
+  color:white;
+  width:100%;
 }
