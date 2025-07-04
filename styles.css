@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  padding:10px;
+}
+.title {
+  text-align: center;
+  font-size: 3em;
+  margin: 5px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    indigo,
+    violet
+  );
+  background-size: 200%;
+  background-position: left;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: clamp(300px, 40%, 650px);
+  height: 100%;
+  margin:10px;
+}
+.edit-section {
+  width: 100%;
+  padding: 20px 25px;
+  background-color: rgb(244, 242, 242);
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.151);
+}
+.edit-form {
+  display: flex;
+  gap: 10px;
+}
+.edit-input {
+  padding: 5px 7px;
+  flex: 1;
+  outline: none;
+  border: 5px solid rgb(228, 235, 228);
+  border-radius: 10px;
+}
+.edit-button {
+  background-color: lightgreen;
+  color: rgb(26, 25, 25);
+  border-radius: 10px;
+  border: none;
+  padding: 5px 10px;
+}
+.container {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border: 5px solid rgb(67, 67, 67);
+  border-radius: 10px;
+}
